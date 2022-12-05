@@ -1,7 +1,6 @@
 import fs from 'fs';
 
 const create = async () => {
-    
     fs.access('src/fs/files/fresh.txt', (err) => {
         if (err) {
             fs.writeFile('src/fs/files/fresh.txt', 'I am fresh and young', (err) => {
@@ -11,7 +10,6 @@ const create = async () => {
             throw new Error('FS operation failed');
         }
     })
-
 };
 
 await create();

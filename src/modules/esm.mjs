@@ -2,7 +2,6 @@ import path from 'path';
 import { release, version } from 'os';
 import { createServer as createServerHttp } from 'http';
 import './files/c.js';
-
 import { fileURLToPath } from 'url';
 
 const random = Math.random();
